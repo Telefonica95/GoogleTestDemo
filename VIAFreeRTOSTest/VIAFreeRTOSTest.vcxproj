@@ -35,6 +35,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\Tmp\FreeRTOSv10.3.1\FreeRTOS\Source\portable\MSVC-MingW;C:\Tmp\FreeRTOSv10.3.1\FreeRTOS\Source\include;C:\Users\Ib Havn\source\repos\GoogleTest\VIAFreeRTOS-Windows;$(IncludePath)</IncludePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\dimin\OneDrive\VIA\4th Semerster\ESW-1\Stuff\FreeRTOSv10.3.0\FreeRTOS\Source\portable\MSVC-MingW;C:\Users\dimin\OneDrive\VIA\4th Semerster\ESW-1\Stuff\FreeRTOSv10.3.0\FreeRTOS\Source\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="..\VIAFreeRTOS-Windows\myTask.c" />
     <ClCompile Include="VIAFreeRTOSTest.cpp" />

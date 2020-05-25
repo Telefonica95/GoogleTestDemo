@@ -35,8 +35,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\Users\Ib Havn\source\repos\GoogleTest\ProductionCode;$(IncludePath)</IncludePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\dimin\OneDrive\VIA\4th Semerster\ESW-1\Coding\GoogleTestDemo\ProductionCode\x64;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="..\ProductionCode\production.c" />
+    <ClCompile Include="production.c" />
     <ClCompile Include="productionTest.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -44,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\ProductionCode\hal.h" />
-    <ClInclude Include="..\ProductionCode\production.h" />
+    <ClInclude Include="production.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
@@ -68,7 +71,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>X64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>

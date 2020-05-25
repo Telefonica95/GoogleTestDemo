@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
-#include "../../fff/fff.h"
+//#include "../../fff/fff.h"
 #include <stdint.h>
-DEFINE_FFF_GLOBALS
+//DEFINE_FFF_GLOBALS
 
 extern "C" {
 #include "hal.h"
